@@ -1,0 +1,12 @@
+{
+    "name": "H590Controller",
+    "description": "Implements Hegel H590 IP Control Codes",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flows-h590-controller.json",
+            "credentialsFile": "flows-h590-controller_cred.json"
+        }
+    }
+}
