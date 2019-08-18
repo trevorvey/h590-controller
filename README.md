@@ -5,5 +5,6 @@ Implements Hegel H590 IP Control Codes
 
 ### About
 
-This is your project's README.md file. It helps users understand what your
-project does, how to use it and anything else they may need to know.
+- Edit the IP address in the TCP Connection node to match the IP of your amplifier
+.  
+- There is no error handling to speak of just yet -  need to add extra outputs to the TCP Connection node to capture connection errors.
