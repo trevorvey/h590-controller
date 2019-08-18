@@ -2,7 +2,11 @@
     "name": "H590Controller",
     "description": "Implements Hegel H590 IP Control Codes",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-contrib-simple-message-queue": "0.2.5",
+        "node-red-contrib-ui-level": "0.0.24",
+        "node-red-dashboard": "2.15.5"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows-h590-controller.json",
