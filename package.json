@@ -5,7 +5,7 @@
     "dependencies": {
         "node-red-contrib-simple-message-queue": "0.2.5",
         "node-red-contrib-ui-level": "0.0.24",
-        "node-red-dashboard": "2.15.5"
+        "node-red-dashboard": "2.17.1"
     },
     "node-red": {
         "settings": {
