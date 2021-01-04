@@ -1,0 +1,66 @@
+/* Cloak elements on initial load to hide the possible display of {{ ... }} 
+ * Add to the app tag or to specific tags
+ * To display "loading...", change to the following:
+ *    [v-cloak] > * { display:none }
+ *    [v-cloak]::before { content: "loading…" }
+ */
+[v-cloak] { display: none; }
+
+/*  Colours for Syntax Highlighted pre's */
+.syntax-highlight {color:white;background-color:black;padding:5px 10px;}
+.syntax-highlight > .key {color:#ffbf35}
+.syntax-highlight > .string {color:#5dff39;}
+.syntax-highlight > .number {color:#70aeff;}
+.syntax-highlight > .boolean {color:#b993ff;}
+
+body{
+      /*background: #FF4855;*/ 
+    }
+    .close{
+      margin: 30px auto;
+      width: 50px;
+      height: 50px;
+      position: relative;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      background: FF4855;
+      cursor: pointer;
+      transition: all 1s linear;
+    }
+    .close.active{
+      background: #fff;
+    }
+    .close.active, 
+    .close.active:before, 
+    .close.active:after{
+      transition: all 1s linear;
+    }
+    
+    .close:before, 
+    .close:after{
+      content: "";
+      position:absolute;
+      width: 80%;
+      height: 2px;
+      background: #FF4855;
+      top: 50%;
+      left: 10%;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+    }
+    .close:after{
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+    }
+    .close.active:before, 
+    .close.active:after{
+      background: #FF4855;
+    }
