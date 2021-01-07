@@ -2,6 +2,10 @@
     "name": "H590Controller",
     "description": "Implements Hegel H590 IP Control Codes",
     "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/trevorvey/h590-controller.git"
+    },
     "dependencies": {
         "node-red-contrib-simple-message-queue": "0.2.5",
         "node-red-contrib-ui-level": "0.0.24",
