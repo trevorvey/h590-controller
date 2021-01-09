@@ -162,7 +162,7 @@
         "id": "fb401144.6268d",
         "type": "tcp request",
         "z": "5163fbf0.85f694",
-        "server": "192.168.3.166",
+        "server": "${HEGEL_IP}",
         "port": "50001",
         "out": "time",
         "splitc": "0",
