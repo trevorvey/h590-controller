@@ -10,7 +10,7 @@ RUN npm install --unsafe-perm --no-update-notifier --no-fund --only=production
 #       If you need to use an external volume for persistence then
 #       copy your settings and flows files to that volume instead.
 #COPY settings.js /data/settings.js
-COPY flows-h590-controller_cred.json /data/flows_cred.json
+#COPY flows-h590-controller_cred.json /data/flows_cred.json
 COPY flows-h590-controller.json /data/flows.json
 
 # You should add extra nodes via your package.json file but you can also add them here:
